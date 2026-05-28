@@ -1,0 +1,137 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "mapa1.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "Todos los archivos (*)",
+    "fileStates": {
+        "C:/Python/proyecto3/mapas/mapa1/mapa1.tmx": {
+            "scale": 1.0572048611111111,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 575.574349289761,
+                "y": 255.86337137696034
+            }
+        },
+        "C:/Python/proyecto3/mapas/mapa1/mapa1.tmx#tiles1": {
+            "scaleInDock": 1
+        },
+        "C:/Python/proyecto3/mapas/mapa1/tiles1.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "C:/Python/proyecto3/mapas/mapa1/tiles2.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Python/proyecto3/mapas/mapa1/tiles3.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Python/proyecto3/mapas/mapa1/tiles5.tsx": {
+            "scaleInDock": 1
+        },
+        "cocinabanoaguaoriginal.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ensayo.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "mapa1.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 465.3333333333333,
+                "y": 244.99999999999997
+            }
+        },
+        "mapa2.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 489.3333333333333,
+                "y": 204.33333333333337
+            }
+        },
+        "tilescocina.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        },
+        "tilescocinabano.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilescocinabanoagua.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 2
+        },
+        "tilesexterior.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1.5,
+            "scaleInEditor": 2
+        },
+        "tilesgroundgrass.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tileshouse.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilesinterior.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "tilesplanta1.tsx": {
+            "scaleInDock": 0.5,
+            "scaleInEditor": 1
+        },
+        "tilesstreet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tileswallsfloor.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        }
+    },
+    "last.externalTilesetPath": "D:/Proyectos/PPI/Maya-Ahorra-Agua-PPI-Juego/mapas/mapa1",
+    "last.imagePath": "D:/Proyectos/Casa/PNG",
+    "map.height": 24,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 54,
+    "openFiles": [
+        "mapa1.tmx",
+        "mapa2.tmx"
+    ],
+    "project": "mapa1.tiled-project",
+    "recentFiles": [
+        "mapa2.tmx",
+        "mapa1.tmx",
+        "ensayo.tsx",
+        "tilesexterior.tsx",
+        "tileshouse.tsx",
+        "tilesinterior.tsx",
+        "tilesstreet.tsx",
+        "tileswallsfloor.tsx",
+        "tilescocinabano.tsx",
+        "tilescocina.tsx",
+        "tilescocinabanoagua.tsx",
+        "cocinabanoaguaoriginal.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.useTransparentColor": false
+}
