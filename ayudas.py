@@ -49,11 +49,19 @@ colorPrincipal = '#2D734D'
 azul = (0,0,255)
 azulClaro = "#82CED6"
 azulOscuro = "#6CAEB8"
+cafe = "#76603A"
 cafecito = '#784330'
+verde = "#88A959"
 
 # TIPOS DE FUENTES:
 simsun = 'simsun'
 fuentePrincipal = './fuentes/almondMocca.otf'
+letradumb2 = './fuentes/2Dumb.ttf'
+letradumb3 = './fuentes/3Dumb.ttf'
+letravt3r = './fuentes/VT3R.ttf'
+letrasilk = './fuentes/silkscreen.ttf'
+
+
 
 # LISTA DE IMAGENES:
 maya = './imagenes/maya.png'
@@ -66,9 +74,12 @@ piso2 = './imagenes/casa2.png'
 
 
 # ARCHIVOS PLANOS:
+usuarios = './archivos/usuarios.txt'
 
 # SONIDOS:
-
+gameover3 = pygame.mixer.Sound('./sonidos/gameover3.ogg')
+arr = pygame.mixer.Sound('./sonidos/arr.wav')
+childrenmarch = pygame.mixer.Sound('./sonidos/childrenmarch.mp3')
 VECTOR = pygame.math.Vector2 
 
 def mostrarLetraSistema():
@@ -88,7 +99,6 @@ def mostrarTextoTTF(texto):
                                   texto.color)[0],
                                   (texto.coord.x,texto.coord.y))  
     
-
 def mostrarTextoLargoSistema(texto):
     letra = pygame.freetype.SysFont(texto.font,texto.size)
     y = texto.coord.y
@@ -97,7 +107,6 @@ def mostrarTextoLargoSistema(texto):
                                     texto.color)[0],
                                     (texto.coord.x,y))
         y += 30        
-
 
 def mostrarTextoSistemaMaquinaDeEscribir(texto):
     letra = pygame.freetype.SysFont(texto.font,texto.size)
@@ -116,7 +125,6 @@ def mostrarTextoTTFMaquinaDeEscribir(texto):
     ventana.blit(letra.render(str(texto.texto[0:texto.contador//texto.velocidad]),
                                   texto.color)[0],
                                   (texto.coord.x,texto.coord.y)) 
-
 
 def mostrarTextoLargoSistemaMaquinaDeEscribir(texto):
     letra = pygame.freetype.SysFont(texto.font,texto.size)
@@ -137,7 +145,21 @@ def mostrarTextoLargoSistemaMaquinaDeEscribir(texto):
     ventana.blit(letra.render(str(texto.linea[0:texto.contador//texto.velocidad]),
                                   texto.color)[0],
                                   (texto.coord.x,texto.coord.y))
-    
+
+def intermitenteTextoSistema(texto):
+    for evento in Ayudas.EVENTOS:
+        if evento.type == texto.parpadear:
+            texto.parpadeando = not texto.parpadeando
+    if texto.parpadeando:
+        mostrarTextoSistema(texto)
+
+def intermitenteTextoTTF(texto):
+    for evento in Ayudas.EVENTOS:
+        if evento.type == texto.parpadear:
+            texto.parpadeando = not texto.parpadeando
+    if texto.parpadeando:
+        mostrarTextoTTF(texto)   
+
 def error(mensaje):
 
     ancho = 300
@@ -223,6 +245,8 @@ INCLINADAS1 = pygame.sprite.Group()
 
 INCLINADAS2 = pygame.sprite.Group()
 
+AGUITA = pygame.sprite.Group()
+
 offset = VECTOR((0,0))
 
 def emptySprites():
@@ -233,6 +257,7 @@ def emptySprites():
     PORTAL.empty()
     INCLINADAS1.empty()
     INCLINADAS2.empty()
+    AGUITA.empty()
 
 def camara(jugador):
     offset.x = jugador.sprite.rect.centerx-MEDIO_ANCHO
@@ -309,8 +334,7 @@ def mapa(mapa):
 
 # LISTA DE MAPAS:
 mapa1 = './mapas/mapa1/mapa1.tmx'      
-mapa2 = './mapas/mapa2/mapa2.tmx'  
-mapa3 = './mapas/mapa3/mapa3.tmx'      
+mapa2 = './mapas/mapa2/mapa2.tmx'       
 
 '''
 class barrasalud:

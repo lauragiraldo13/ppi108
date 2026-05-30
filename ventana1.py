@@ -2,6 +2,8 @@ from ayudas import *
 from jugador import *
 from enemigo import *
 from archivos import *
+from boton import *
+from agua import *
 
 mapa1 = './mapas/mapa1/mapa1.tmx'
 
@@ -76,14 +78,44 @@ class mama:
 
 crearEnemigo(mama)
 
+childrenmarch.play(-1)
+
+class textogameover:
+    texto = 'Oh! Se desperdicio mucha agua... Perdiste'
+    size = 35
+    color = negro
+    font = fuentePrincipal
+    coord = VECTOR(50,50)
+    parpadeando = True
+    parpadear = pygame.USEREVENT + 1
+    pygame.time.set_timer(parpadear,800)
+
+class botonvolver:
+    boton = None
+    click = False
+    texto = 'Volverlo a intentar'
+    font = fuentePrincipal
+    fontSize = 30
+    colorInactivo = azulClaro
+    colorActivo = azulOscuro
+    colorTexto = blanco
+    coord = VECTOR(1150,770)
+    size = VECTOR(350,50)
+    borde = False
+    tipo = 'ttf' # 'ttf' 'system'
+
 def ventana1():
-    
+    ventana.fill(cafe)
     emptySprites()
 
     cargarmapa1(mapa1)
     
     CAMARA.add(maya.sprite)
     CAMARA.add(mama.sprite)
+
+    for gota in aguita:
+        cargarAnimacionesAguita(agua,0,gota)
+        CAMARA.add(gota)
 
     camara(maya)
     mover2(maya)
@@ -98,7 +130,18 @@ def ventana1():
         ventana.blit(text, (10,10))
 
     else:
+        childrenmarch.stop()
+        gameover3.play(-1)
         imagenDead = pygame.image.load('./imagenes/maya/muerto/1.png'). convert_alpha()
         maya.sprite.image = pygame.transform.scale(imagenDead,(30,50))
-        Ayudas.actual = 'pantallaGameOver'
+        intermitenteTextoTTF(textogameover)
+        boton(botonvolver)
+        
+        if click(botonvolver):
+            guardar_vida(100)
+            gameover3.stop()
+            childrenmarch.play(-1)
+            Ayudas.actual = 'ventana1'
+            botonvolver.click = False
+
         #guardar_vida(100)
