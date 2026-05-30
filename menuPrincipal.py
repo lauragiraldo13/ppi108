@@ -34,11 +34,11 @@ class botonJugar:
     colorActivo = azulOscuro
     colorTexto = blanco
     coord = VECTOR(MEDIO_ANCHO-100,420)
-    size = VECTOR(200,50)
+    size = VECTOR(200,70)
     borde = False
     tipo = 'ttf' #'system' 
 
-class botonPlanta1:
+'''class botonPlanta1:
     boton = None
     click = False
     texto = 'PLANTA 1'
@@ -50,7 +50,7 @@ class botonPlanta1:
     coord = VECTOR(ANCHO-210,ALTO-110)
     size = VECTOR(200,50)
     borde = False
-    tipo = 'ttf' #'system' 
+    tipo = 'ttf' #'system
 
 class botonPlanta2:
     boton = None
@@ -64,7 +64,7 @@ class botonPlanta2:
     coord = VECTOR(ANCHO-210,ALTO-60)
     size = VECTOR(200,50)
     borde = False
-    tipo = 'ttf' #'system' 
+    tipo = 'ttf' #'system' '''
 
 class botonInfo:
     boton = None
@@ -97,20 +97,20 @@ def menuPrincipal():
     imagen(imagenMaya)
     boton(botonJugar)
     boton(botonInfo)
-    boton(botonPlanta1)
-    boton(botonPlanta2)
+    #boton(botonPlanta1)
+    #boton(botonPlanta2)
 
     if click(botonJugar):
-        Ayudas.actual = 'ventana1'
+        Ayudas.actual = 'storyboard'
         botonJugar.click = False
 
-    if click(botonPlanta1):
+    '''if click(botonPlanta1):
         Ayudas.actual = 'ventana1'
         botonPlanta1.click = False
 
     if click(botonPlanta2):
         Ayudas.actual = 'ventana2'
-        botonPlanta2.click = False
+        botonPlanta2.click = False '''
 
     if click(botonInfo):
         ventanaEmergenteInfo.show = True

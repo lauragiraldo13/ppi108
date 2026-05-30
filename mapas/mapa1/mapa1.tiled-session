@@ -21,7 +21,7 @@
         },
         "C:/Python/proyecto3/mapas/mapa1/tiles1.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 8
+            "scaleInDock": 1
         },
         "C:/Python/proyecto3/mapas/mapa1/tiles2.tsx": {
             "scaleInDock": 1
@@ -42,20 +42,24 @@
             "scaleInEditor": 1
         },
         "mapa1.tmx": {
-            "scale": 1.5,
-            "selectedLayer": 2,
+            "scale": 2,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 427.3333333333333,
-                "y": 444.33333333333337
+                "x": 178.75,
+                "y": 170.75
             }
         },
         "mapa2.tmx": {
-            "scale": 1.5,
-            "selectedLayer": 4,
+            "scale": 2,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 432,
-                "y": 191.66666666666666
+                "x": 202.75,
+                "y": 192.25
             }
+        },
+        "tilescamas.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "tilescocina.tsx": {
             "dynamicWrapping": false,
@@ -73,7 +77,7 @@
         },
         "tilesexterior.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 1.5,
+            "scaleInDock": 0.75,
             "scaleInEditor": 2
         },
         "tilesgroundgrass.tsx": {
@@ -86,7 +90,12 @@
         },
         "tilesinterior.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 1.5,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilesmuebles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "tilesplanta1.tsx": {
@@ -98,12 +107,12 @@
             "scaleInEditor": 1
         },
         "tileswallsfloor.tsx": {
-            "scaleInDock": 2,
+            "scaleInDock": 1,
             "scaleInEditor": 1
         }
     },
     "last.externalTilesetPath": "D:/Proyectos/PPI/Maya-Ahorra-Agua-PPI-Juego/mapas/mapa1",
-    "last.imagePath": "D:/Proyectos/Casa/PNG",
+    "last.imagePath": "D:/Proyectos",
     "map.height": 24,
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 16,
@@ -117,16 +126,16 @@
     "recentFiles": [
         "mapa2.tmx",
         "mapa1.tmx",
+        "tilesmuebles.tsx",
         "ensayo.tsx",
+        "tilescamas.tsx",
         "tilesexterior.tsx",
         "tileshouse.tsx",
         "tilesinterior.tsx",
         "tilesstreet.tsx",
         "tileswallsfloor.tsx",
         "tilescocinabano.tsx",
-        "tilescocina.tsx",
-        "tilescocinabanoagua.tsx",
-        "cocinabanoaguaoriginal.tsx"
+        "tilescocina.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

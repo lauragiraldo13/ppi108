@@ -60,6 +60,7 @@ letradumb2 = './fuentes/2Dumb.ttf'
 letradumb3 = './fuentes/3Dumb.ttf'
 letravt3r = './fuentes/VT3R.ttf'
 letrasilk = './fuentes/silkscreen.ttf'
+arial = 'arial'
 
 
 
@@ -71,6 +72,7 @@ tablero = './imagenes/tablero.png'
 fondoGM = './imagenes/gameOver.png'
 piso1 = './imagenes/casa1.png'
 piso2 = './imagenes/casa2.png'
+mision = './imagenes/mision.png'
 
 
 # ARCHIVOS PLANOS:

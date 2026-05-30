@@ -1,9 +1,10 @@
 from ayudas import *
 from menuPrincipal import *
+from storyboard import *
 from pantallaCarga import * 
-from gameOver import *
 from ventana1 import *
 from ventana2 import *
+from gameOver import *
 
 # zona de variables
 

@@ -32,6 +32,6 @@ def pantallaCarga():
     mostrarTextoTTFMaquinaDeEscribir(textoBarra)
 
     if barraProgreso.completed:
-        Ayudas.actual = 'pantallaGameOver'
+        Ayudas.actual = 'ventana1'
         barraProgreso.completed = False
         barraProgreso.progress = 0
