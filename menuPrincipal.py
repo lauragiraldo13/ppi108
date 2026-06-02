@@ -2,6 +2,8 @@ from ayudas import *
 from imagenes import *
 from boton import*
 from emergente import *
+from entradadetexto import *
+from emergente2 import *
 
 class fondoPrincipal:
     size = VECTOR(ANCHO, ALTO)
@@ -19,7 +21,7 @@ class logoPrincipal:
 
 class imagenMaya:
     size = VECTOR(280,460)
-    coord = VECTOR(10,ALTO-460)
+    coord = VECTOR(100,ALTO-460)
     archivo = pygame.image.load(maya).convert_alpha()
     imagen = pygame.transform.scale(archivo,(size.x,size.y))
     posicion = 0
@@ -33,7 +35,7 @@ class botonJugar:
     colorInactivo = azulClaro
     colorActivo = azulOscuro
     colorTexto = blanco
-    coord = VECTOR(MEDIO_ANCHO-100,420)
+    coord = VECTOR(MEDIO_ANCHO-100,550)
     size = VECTOR(200,70)
     borde = False
     tipo = 'ttf' #'system' 
@@ -75,7 +77,7 @@ class botonInfo:
     colorInactivo = azulClaro
     colorActivo = azulOscuro
     colorTexto = blanco
-    coord = VECTOR(MEDIO_ANCHO-25,520)
+    coord = VECTOR(MEDIO_ANCHO+495,750)
     size = VECTOR(50,50)
     borde = False
     tipo = 'ttf' #'system' 
@@ -83,26 +85,62 @@ class botonInfo:
 class ventanaEmergenteInfo:
     show = False
     size = VECTOR(400,500)
-    coord = VECTOR(ANCHO//2 - size.x // 2, ALTO//2 - size.y // 2)
+    coord = VECTOR(MEDIO_ANCHO+320,230)
     titulo = 'INFO'
-    mensaje = 'Proyecto Academico'
+    mensaje = 'Proyecto Académico'
     mensaje2 = 'Elaborado por:'
     mensaje3 = 'Laura Cristina Giraldo Monsalve'
     mensaje4 = 'Camila Osorio Suarez'
     mensaje5 = 'Santiago Vanegas Henao'
 
+class ingreseUsuario:
+    entrada = None
+    click = False
+    texto = ""
+    font = arial
+    fontSize = 30
+    colorInactivo = azulOscuro
+    colorActivo = negro
+    eventoCursor = pygame.USEREVENT + 1
+    pygame.time.set_timer(eventoCursor,500)
+    coord = VECTOR(MEDIO_ANCHO-115,450)
+    size = VECTOR(230,50)
+    password = False
+
+class pedirUsuario:
+    texto = "Nombre de usuario:"
+    size = 25
+    color = negro
+    font = candara
+    coord = VECTOR(MEDIO_ANCHO-100,420)
+    parpadeando = True
+    parpadear = pygame.USEREVENT + 1
+    pygame.time.set_timer(parpadear,800)
+
 def menuPrincipal():
     imagen(fondoPrincipal)
     imagen(logoPrincipal)
     imagen(imagenMaya)
-    boton(botonJugar)
     boton(botonInfo)
-    #boton(botonPlanta1)
-    #boton(botonPlanta2)
+    entrada(ingreseUsuario)
+    mostrarTextoSistema(pedirUsuario)
+    boton(botonJugar)
 
-    if click(botonJugar):
-        Ayudas.actual = 'storyboard'
-        botonJugar.click = False
+    if click (botonJugar):
+        if ingreseUsuario.texto == '':
+            Ventanaemergente2.titulo = 'Usuario inválido'
+            Ventanaemergente2.mensaje = 'Debes ingresar un nombre de usuario!'
+            Ventanaemergente2.show = True
+        else:
+            Ayudas.actual = 'storyboard'
+            Ayudas.usuario = ingreseUsuario.texto
+            resetear(ingreseUsuario)
+            botonJugar.click = False
+
+        emergente2(Ventanaemergente2, botonJugar)
+
+    
+       
 
     '''if click(botonPlanta1):
         Ayudas.actual = 'ventana1'
@@ -116,3 +154,5 @@ def menuPrincipal():
         ventanaEmergenteInfo.show = True
     
     emergente(ventanaEmergenteInfo, botonInfo)
+    
+    

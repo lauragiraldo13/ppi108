@@ -30,30 +30,59 @@ animacion_agua = []
 animacion_agua.append(
     pygame.transform.scale(
         pygame.image.load('./imagenes/agua/1.png'),
-        (22,20)
+        (16,26)
     )
 )
 
 animacion_agua.append(
     pygame.transform.scale(
         pygame.image.load('./imagenes/agua/2.png'),
-        (36,42)
+        (17,26)
     )
 )
 
 animacion_agua.append(
     pygame.transform.scale(
         pygame.image.load('./imagenes/agua/3.png'),
-        (49,43)
+        (20,26)
     )
 )
 
 animacion_agua.append(
     pygame.transform.scale(
         pygame.image.load('./imagenes/agua/4.png'),
-        (60,42)
+        (23,26)
     )
 )
+
+animacion_agua.append(
+    pygame.transform.scale(
+        pygame.image.load('./imagenes/agua/5.png'),
+        (19,26)
+    )
+)
+
+animacion_agua.append(
+    pygame.transform.scale(
+        pygame.image.load('./imagenes/agua/6.png'),
+        (24,26)
+    )
+)
+
+animacion_agua.append(
+    pygame.transform.scale(
+        pygame.image.load('./imagenes/agua/7.png'),
+        (23,26)
+    )
+)
+
+animacion_agua.append(
+    pygame.transform.scale(
+        pygame.image.load('./imagenes/agua/8.png'),
+        (23,26)
+    )
+)
+
 
 agua.movimientos.append(animacion_agua)
 

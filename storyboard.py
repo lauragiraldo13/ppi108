@@ -14,12 +14,12 @@ class fondoprincipal3:
 class botoncomenzar:
     boton = None
     click = False
-    texto = 'Click para comenzar'
+    texto = 'Comenzar...'
     font = fuentePrincipal
     fontSize = 30
     colorInactivo = azulClaro
     colorActivo = azulOscuro
-    colorTexto = blanco
+    colorTexto = negro
     coord = VECTOR(MEDIO_ANCHO-138,MEDIO_ALTO+349)
     size = VECTOR(350,80)
     borde = False

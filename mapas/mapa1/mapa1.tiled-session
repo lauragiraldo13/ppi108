@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "mapa1.tmx",
+    "activeFile": "mapa2.tmx",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "Todos los archivos (*)",
@@ -42,11 +42,11 @@
             "scaleInEditor": 1
         },
         "mapa1.tmx": {
-            "scale": 2,
+            "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 178.75,
-                "y": 170.75
+                "x": 340.16666666666663,
+                "y": 212.49999999999997
             }
         },
         "mapa2.tmx": {
@@ -124,8 +124,8 @@
     ],
     "project": "mapa1.tiled-project",
     "recentFiles": [
-        "mapa2.tmx",
         "mapa1.tmx",
+        "mapa2.tmx",
         "tilesmuebles.tsx",
         "ensayo.tsx",
         "tilescamas.tsx",

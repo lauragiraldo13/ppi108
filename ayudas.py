@@ -61,6 +61,7 @@ letradumb3 = './fuentes/3Dumb.ttf'
 letravt3r = './fuentes/VT3R.ttf'
 letrasilk = './fuentes/silkscreen.ttf'
 arial = 'arial'
+candara = 'candara'
 
 
 

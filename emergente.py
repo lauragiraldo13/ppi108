@@ -14,7 +14,7 @@ class Ventanaemergente:
 def emergente(emergente, boton):
 
     # Fuente
-    font = pygame.font.SysFont("simsun", 24)
+    font = pygame.font.SysFont("candara", 24)
 
     aceptar = pygame.Rect(
     emergente.coord.x + (emergente.size.x - 100) // 2,  # Centrado horizontalmente
@@ -50,8 +50,7 @@ def emergente(emergente, boton):
         ventana.blit(menssage, (emergente.coord.x + (emergente.size.x - menssage.get_width()) // 2, emergente.coord.y + 300))
         menssage = font.render(emergente.mensaje5 , True, blanco)
         ventana.blit(menssage, (emergente.coord.x + (emergente.size.x - menssage.get_width()) // 2, emergente.coord.y + 325))
-        
-        
+           
         # Botón "Aceptar" (con efecto hover)
         mouse_pos = pygame.mouse.get_pos()
         button_color = azulClaro if aceptar.collidepoint(mouse_pos) else azulOscuro
@@ -68,3 +67,4 @@ def emergente(emergente, boton):
                 aceptar.centery - boton_aceptar.get_height() // 2
             )
         )
+

@@ -100,7 +100,7 @@ class botonvolver:
     colorActivo = azulOscuro
     colorTexto = blanco
     coord = VECTOR(1150,770)
-    size = VECTOR(350,50)
+    size = VECTOR(350,70)
     borde = False
     tipo = 'ttf' # 'ttf' 'system'
 
