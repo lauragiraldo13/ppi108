@@ -132,7 +132,7 @@ def menuPrincipal():
             Ventanaemergente2.mensaje = 'Debes ingresar un nombre de usuario!'
             Ventanaemergente2.show = True
         else:
-            Ayudas.actual = 'ventana1'
+            Ayudas.actual = 'storyboard'
             Ayudas.usuario = ingreseUsuario.texto
             resetear(ingreseUsuario)
             botonJugar.click = False
