@@ -40,34 +40,6 @@ class botonJugar:
     borde = False
     tipo = 'ttf' #'system' 
 
-'''class botonPlanta1:
-    boton = None
-    click = False
-    texto = 'PLANTA 1'
-    font = fuentePrincipal
-    fontSize = 30
-    colorInactivo = azulClaro
-    colorActivo = azulOscuro
-    colorTexto = blanco
-    coord = VECTOR(ANCHO-210,ALTO-110)
-    size = VECTOR(200,50)
-    borde = False
-    tipo = 'ttf' #'system
-
-class botonPlanta2:
-    boton = None
-    click = False
-    texto = 'PLANTA 2'
-    font = fuentePrincipal
-    fontSize = 30
-    colorInactivo = azulClaro
-    colorActivo = azulOscuro
-    colorTexto = blanco
-    coord = VECTOR(ANCHO-210,ALTO-60)
-    size = VECTOR(200,50)
-    borde = False
-    tipo = 'ttf' #'system' '''
-
 class botonInfo:
     boton = None
     click = False
@@ -139,16 +111,6 @@ def menuPrincipal():
 
         emergente2(Ventanaemergente2, botonJugar)
 
-    
-       
-
-    '''if click(botonPlanta1):
-        Ayudas.actual = 'storyboard'
-        botonPlanta1.click = False
-
-    if click(botonPlanta2):
-        Ayudas.actual = 'ventana2'
-        botonPlanta2.click = False '''
 
     if click(botonInfo):
         ventanaEmergenteInfo.show = True

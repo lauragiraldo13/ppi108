@@ -3,33 +3,6 @@ pygame.font.init()
 
 from ayudas import *
 
-# variable para hacer un boton con bordes y de un color
-'''
-class boton:
-    boton = None
-    click = False
-    texto = 'Click me'
-    font = letra3
-    fontSize = 20
-    colorInactivo = color1
-    colorActivo = color2
-    colorTexto = color3
-    coord = VECTOR(20,20)
-    size = VECTOR(100,50)
-    borde = False
-    tipo = 'system' # 'ttf'
-'''
-
-# variable para hacer un boton con un fondo de imagen
-'''
-class boton:
-    boton = None
-    click = False
-    coord = VECTOR(20,20)
-    size = VECTOR(100,50)
-    imagen = pygame.image.load(poner imagen).convert_alpha()
-'''
-
 def boton(boton):
 
     if boton.borde:

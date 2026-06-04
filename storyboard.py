@@ -25,21 +25,6 @@ class botoncomenzar:
     borde = False
     tipo = 'ttf'
 
-'''class texto:
-    texto = ["Realiza acciones inteligentes",
-             "para ahorrar agua en casa y",
-             "cuidar nuestro planeta"]
-    size = 20
-    color = negro
-    font = arial
-    coord = VECTOR(10,120)
-    contador = 0
-    velocidad = 1
-    actual = 0
-    linea = texto[actual]
-    listo = False'''
-
-
 def storyboard():
     imagen(fondoprincipal3)
     boton(botoncomenzar)
