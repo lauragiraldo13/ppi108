@@ -132,7 +132,7 @@ def menuPrincipal():
             Ventanaemergente2.mensaje = 'Debes ingresar un nombre de usuario!'
             Ventanaemergente2.show = True
         else:
-            Ayudas.actual = 'storyboard'
+            Ayudas.actual = 'ventana1'
             Ayudas.usuario = ingreseUsuario.texto
             resetear(ingreseUsuario)
             botonJugar.click = False
@@ -143,7 +143,7 @@ def menuPrincipal():
        
 
     '''if click(botonPlanta1):
-        Ayudas.actual = 'ventana1'
+        Ayudas.actual = 'storyboard'
         botonPlanta1.click = False
 
     if click(botonPlanta2):

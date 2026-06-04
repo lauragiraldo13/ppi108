@@ -45,16 +45,16 @@
             "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 340.16666666666663,
-                "y": 212.49999999999997
+                "x": 431.99999999999994,
+                "y": 191.99999999999997
             }
         },
         "mapa2.tmx": {
-            "scale": 2,
+            "scale": 1,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 202.75,
-                "y": 192.25
+                "x": 343,
+                "y": 192
             }
         },
         "tilescamas.tsx": {

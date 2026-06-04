@@ -96,11 +96,26 @@ def copiaragua(jugador):
 
     return sprite
 
-aguita = [copiaragua(agua) for _ in range(20)]
+# Posiciones fijas de las 4 gotas
+posiciones_agua = [
+    (284, 84), #fuenteexterior
+    (175, 483), #canillaexterior
+    (930, 176), #lavaloza
+    (1130, 515), #lavadora
+    (1375, 540), #bañera
+    (1470, 180), #fuentepatio
+    (1595, 370) #fuenteexterior
+]
 
-for gota in aguita:
-    gota.rect.x = random.randint(TILESIZE, ANCHO_MUNDO-TILESIZE)
-    gota.rect.y = random.randint(TILESIZE, ALTO_MUNDO-TILESIZE)
+aguita = []
+
+for x, y in posiciones_agua:
+    gota = copiaragua(agua)
+
+    gota.rect.x = x
+    gota.rect.y = y
+
+    aguita.append(gota)
     AGUITA.add(gota)
 
 def cargarAnimacionesAguita(jugador, animacion, sprite):
