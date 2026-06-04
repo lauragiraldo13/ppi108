@@ -42,19 +42,19 @@
             "scaleInEditor": 1
         },
         "mapa1.tmx": {
-            "scale": 2,
+            "scale": 1.5,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 428.5,
-                "y": 381.25
+                "x": 435.99999999999994,
+                "y": 210.99999999999997
             }
         },
         "mapa2.tmx": {
-            "scale": 1,
-            "selectedLayer": 3,
+            "scale": 2,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 432,
-                "y": 191.5
+                "x": 570.5,
+                "y": 191.75
             }
         },
         "tilescamas.tsx": {
